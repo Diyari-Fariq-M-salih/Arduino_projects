@@ -1,3 +1,12 @@
+#include <TM1637Display.h> // Include the TM1637Display library
+
+// --- TM1637 Display Connections ---
+#define CLK 11 // Adjust to your actual CLK pin
+#define DIO 10 // Adjust to your actual DIO pin
+
+TM1637Display display(CLK, DIO);
+
+
 //First we define the pins that Trig and Echo are connected to. 
 
 const int trigPin = 9;  
