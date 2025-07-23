@@ -2,7 +2,7 @@
 
 // --- TM1637 Display Connections ---
 #define CLK 11 // Adjust to your actual CLK pin
-#define DIO 10 // Adjust to your actual DIO pin
+#define DIO 12 // Adjust to your actual DIO pin
 
 TM1637Display display(CLK, DIO);
 
@@ -19,6 +19,9 @@ void setup(){
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   Serial.begin(9600);
+
+  display.clear();        // Clear the TM1637 display
+  display.setBrightness(7); // Set display brightness (0-7, or 0x00-0x0f hex)
 }
 void loop() {  
 
@@ -42,6 +45,8 @@ void loop() {
   Serial.print("Distance: ");  
 	Serial.println(distance);  
 	delay(100);  
+
+  display.showNumberDecEx(distance);
 }
 
 
