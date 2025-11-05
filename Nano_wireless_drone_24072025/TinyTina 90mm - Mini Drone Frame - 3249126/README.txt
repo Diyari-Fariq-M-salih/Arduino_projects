@@ -1,0 +1,4 @@
+TinyTina 90mm - Mini Drone Frame by jnscz on Thingiverse: https://www.thingiverse.com/thing:3249126
+
+Summary:
+A mini brushless drone frame (90mm from motor to motor) that doesn't need any screws - everything is held together with zip ties. The frame is ready for standard 20x20mm flight stacks such as HGLRC Micro F4 V2 and similar.The frame comes with a detachable FPV camera holder. The battery is mounted on the top of the frame.To learn more about this project and see the assembly process, please visit https://www.prusaprinters.org/how-to-build-a-3d-printed-micro-drone/And watch the video! :)https://www.youtube.com/watch?v=gpKcrYcMFKM

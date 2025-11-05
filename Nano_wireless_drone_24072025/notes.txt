@@ -1,0 +1,37 @@
+Power Distribution
+
+Battery → Power Distribution Board (PDB) → ESCs and FC.
+
+Use FC’s 5 V regulator output to power RC Rx, Wi‑Fi, and sensors.
+
+ESCs (Electronic Speed Controllers)
+
+Connect ESC signal wires to FC PWM outputs. E.g.:
+
+ESC1 → FC PWM1
+
+ESC2 → PWM2
+
+ESC3 → PWM3
+
+ESC4 → PWM4
+
+RC Receiver
+
+Supply with 5 V and ground from FC.
+
+Connect CH1–CH4 PWM out to FC Rx input pins (assign in firmware).
+
+Wi‑Fi Module (e.g. ESP8266/ESP32)
+
+Power with 3.3 V from FC or a dedicated regulator.
+
+Cross TX/RX: Wi‑Fi TX → FC RX, Wi‑Fi RX ← FC TX.
+
+For telemetry over serial or UDP, ensure baud rate matches.
+
+Sensors (Optional)
+
+An MPU6050 IMU or similar connects via I²C (SDA, SCL) to the FC.
+
+Provide 3/5 V and share ground.
